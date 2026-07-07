@@ -1,0 +1,258 @@
+:root {
+  --text: #1f2933;
+  --muted: #52616b;
+  --blue: #1d4e89;
+  --teal: #2a9d8f;
+  --teal-dark: #185a52;
+  --orange: #f4a261;
+  --orange-dark: #9a3412;
+  --plum: #8b4a6f;
+  --background: #f7fafc;
+  --border: #d9e2ec;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 1rem;
+  background: var(--blue);
+  color: var(--white);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  color: var(--text);
+}
+
+h1 {
+  margin: 0 0 .75rem 0;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+a {
+  color: var(--blue);
+}
+
+.hero {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 .5rem 0;
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: .04em;
+}
+
+.hero-text {
+  font-size: 1.15rem;
+  margin-top: 0;
+}
+
+.summary-card,
+.callout,
+.reflection,
+.next-step {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--blue);
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.teal-callout {
+  background: var(--background);
+  border-left-color: var(--teal);
+}
+
+.blue-callout {
+  background: var(--white);
+  border-left-color: var(--blue);
+}
+
+.reflection {
+  background: var(--background);
+  border-left-color: var(--teal);
+}
+
+.next-step {
+  background: var(--background);
+  border-left-color: var(--blue);
+}
+
+.mini-grid,
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.mini-card,
+.decision-card {
+  flex: 1 1 260px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.mini-card {
+  min-width: 180px;
+}
+
+.decision-card {
+  max-width: 440px;
+}
+
+.blue {
+  border-left: 6px solid var(--blue);
+}
+
+.teal {
+  border-left: 6px solid var(--teal);
+}
+
+.orange {
+  border-left: 6px solid var(--orange);
+}
+
+.plum {
+  border-left: 6px solid var(--plum);
+}
+
+.blue h3 {
+  color: var(--blue);
+}
+
+.teal h3 {
+  color: var(--teal-dark);
+}
+
+.orange h3 {
+  color: var(--orange-dark);
+}
+
+.plum h3 {
+  color: var(--plum);
+}
+
+.pathway {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.step-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.step-card:last-child {
+  margin-bottom: 0;
+}
+
+.step-label {
+  margin: 0 0 .35rem 0;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.accordion {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--blue);
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.accordion summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.accordion div {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: .35rem;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: .75rem;
+  }
+
+  .hero,
+  .summary-card,
+  .callout,
+  .reflection,
+  .next-step,
+  .pathway,
+  .mini-card,
+  .decision-card,
+  .step-card,
+  .accordion {
+    padding: 1rem;
+  }
+}

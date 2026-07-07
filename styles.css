@@ -5,6 +5,11 @@
    rewriting the whole stylesheet.
    ========================================================== */
 
+/* ==========================================================
+   Design Tokens
+   These variables make the site easier to maintain.
+   ========================================================== */
+
 :root {
   --text: #1f2933;
   --muted: #52616b;
@@ -159,7 +164,7 @@ nav a {
 
 .hero {
   background: var(--background);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
 }
 
 .hero-inner {
@@ -171,7 +176,7 @@ nav a {
 .page-section {
   width: min(92%, 1200px);
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2.75rem 0;
 }
 
 .eyebrow {
@@ -189,13 +194,12 @@ nav a {
 
 /* ==========================================================
    Information Cards
-   General content containers should stay subtle.
    ========================================================== */
 
 .info-card {
   background: var(--white);
-  border: 1.5px solid var(--border);
-  border-left: 6px solid var(--primary);
+  border: 2px solid var(--border);
+  border-left: 7px solid var(--primary);
   border-radius: 16px;
   padding: 1.25rem;
   margin-top: 2rem;
@@ -223,7 +227,6 @@ nav a {
 
 /* ==========================================================
    Workflow Cards
-   Workflow cards are medium-weight and do not use hover.
    ========================================================== */
 
 .workflow-grid {
@@ -297,8 +300,6 @@ nav a {
 
 /* ==========================================================
    Decision Cards
-   Decision cards are the main reusable tools on the site.
-   They intentionally have stronger borders and a bottom edge.
    ========================================================== */
 
 .card-grid {
@@ -385,34 +386,34 @@ nav a {
 
 /* ==========================================================
    Footer
+   Full-width divider; smaller footer content.
    ========================================================== */
 
 .site-footer {
-  width: min(92%, 1200px);
-  margin: 0 auto;
-  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
   color: var(--muted);
 }
 
-.footer-divider {
-  height: 1px;
-  background: var(--border);
-  margin-bottom: 2rem;
+.footer-inner {
+  width: min(92%, 1200px);
+  margin: 0 auto;
+  padding: 1.25rem 0;
+  font-size: .9rem;
 }
 
-.footer-content {
-  max-width: 72ch;
+.footer-inner p {
+  margin: 0 0 .4rem 0;
 }
 
 .footer-title {
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: .5rem;
 }
 
 .footer-small {
   color: var(--muted);
-  font-size: .9rem;
+  font-size: .85rem;
 }
 
 /* ==========================================================

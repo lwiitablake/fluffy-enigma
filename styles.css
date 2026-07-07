@@ -157,25 +157,31 @@ p {
 
 .card {
   background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 1.25rem;
+  border: 3px solid var(--border);
+  border-radius: 18px;
+  padding: 1.5rem;
+  transition: .18s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(31, 41, 51, .08);
 }
 
 .card.blue {
-  border-left: 6px solid var(--blue);
+  border-left: 8px solid var(--blue);
 }
 
 .card.teal {
-  border-left: 6px solid var(--teal);
+  border-left: 8px solid var(--teal);
 }
 
 .card.orange {
-  border-left: 6px solid var(--orange);
+  border-left: 8px solid var(--orange);
 }
 
 .card.plum {
-  border-left: 6px solid var(--plum);
+  border-left: 8px solid var(--plum);
 }
 
 .card.blue h3,
@@ -225,8 +231,51 @@ li {
   width: min(92%, 1200px);
   margin: 0 auto;
   padding: 2rem 0;
-  border-top: 1px solid var(--border);
   color: var(--muted);
+}
+
+.footer-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 2rem;
+}
+
+.footer-content {
+  max-width: 72ch;
+}
+
+.footer-title {
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: .5rem;
+}
+
+.footer-small {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.site-footer a {
+  color: var(--blue);
+}
+
+.site-footer a:hover {
+  text-decoration-thickness: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 720px) {
@@ -239,4 +288,3 @@ li {
     padding: 2.5rem 0;
   }
 }
-

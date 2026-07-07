@@ -58,14 +58,14 @@ body {
   background: var(--white);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.95;
+  line-height: 1.65;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  line-height: 1.25;
+  line-height: 1.5;
   color: var(--text);
 }
 
@@ -198,7 +198,7 @@ nav a {
 
 .info-card {
   background: var(--white);
-  border: 2px solid var(--border);
+  border: 6px solid var(--border);
   border-left: 7px solid var(--primary);
   border-radius: 16px;
   padding: 1.25rem;
@@ -238,7 +238,7 @@ nav a {
 
 .workflow-card {
   background: var(--white);
-  border: 2px solid var(--border);
+  border: 6px solid var(--border);
   border-left-width: 8px;
   border-radius: 16px;
   padding: 1.25rem;

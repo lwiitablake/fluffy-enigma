@@ -12,9 +12,11 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
+  <!-- Site note: This page is intentionally lightweight for GitHub Pages and low-bandwidth access. -->
   <header class="site-header">
     <div class="site-header-inner">
       <p class="site-name">Responsible AI Workflow</p>
+
       <nav aria-label="Main navigation">
         <a href="#workflow">Workflow</a>
         <a href="#cards">Decision Cards</a>
@@ -39,7 +41,7 @@
       </div>
     </section>
 
-    <section class="page-section summary-card">
+    <section class="page-section info-card summary-card">
       <h2>Quick Summary</h2>
       <p>
         Responsible AI use is not just about writing better prompts. It is a repeatable workflow: define the problem, gather context, draft carefully, review with human judgment, revise, and document decisions.
@@ -53,31 +55,31 @@
       </p>
 
       <div class="workflow-grid">
-        <article class="card blue">
+        <article class="workflow-card primary">
           <p class="step-label">Step 1</p>
           <h3>Define the Problem</h3>
           <p>Identify the specific course design need before choosing a tool or writing a prompt.</p>
         </article>
 
-        <article class="card teal">
+        <article class="workflow-card support">
           <p class="step-label">Step 2</p>
           <h3>Gather Context</h3>
           <p>Use course outcomes, student needs, assignment purpose, accessibility expectations, and OER/ZTC constraints.</p>
         </article>
 
-        <article class="card orange">
+        <article class="workflow-card warning">
           <p class="step-label">Step 3</p>
           <h3>Draft With AI</h3>
           <p>Use AI to generate a first draft, alternative wording, examples, outlines, or checklists.</p>
         </article>
 
-        <article class="card plum">
+        <article class="workflow-card secondary">
           <p class="step-label">Step 4</p>
           <h3>Review Carefully</h3>
           <p>Check the output for accuracy, accessibility, privacy, bias, alignment, tone, and usefulness.</p>
         </article>
 
-        <article class="card blue">
+        <article class="workflow-card technical">
           <p class="step-label">Step 5</p>
           <h3>Revise and Document</h3>
           <p>Make human improvements and note what was changed, why, and what still needs review.</p>
@@ -85,7 +87,7 @@
       </div>
     </section>
 
-    <section class="page-section callout teal-callout">
+    <section class="page-section info-card callout support-callout">
       <h2>Core Question</h2>
       <p>
         Do not ask only, “Can AI do this?” Ask: <strong>Should AI help with this, what must a human review, and what could go wrong for students if we miss something?</strong>
@@ -98,44 +100,45 @@
         Choose the situation closest to what you are trying to do.
       </p>
 
+      <!-- Decision cards are styled differently from workflow cards because they function as reusable tools. -->
       <div class="card-grid">
 
-        <article class="card blue">
+        <article class="decision-card primary">
           <h3>Clarifying Instructions</h3>
           <p><strong>AI can help with:</strong> simplifying directions, organizing steps, and creating student-friendly wording.</p>
           <p><strong>Human review:</strong> confirm the instructions match the actual assignment, grading expectations, due dates, and Canvas setup.</p>
           <p><strong>Red flag:</strong> AI may invent steps, requirements, or submission details.</p>
         </article>
 
-        <article class="card teal">
+        <article class="decision-card support">
           <h3>Accessibility Review</h3>
           <p><strong>AI can help with:</strong> identifying possible barriers, suggesting alt text drafts, and checking for plain language.</p>
           <p><strong>Human review:</strong> verify heading structure, link purpose, captions, table structure, color contrast, and actual file accessibility.</p>
           <p><strong>Red flag:</strong> AI may say something is accessible without truly checking it.</p>
         </article>
 
-        <article class="card orange">
+        <article class="decision-card warning">
           <h3>Creating Examples</h3>
           <p><strong>AI can help with:</strong> drafting sample scenarios, practice questions, and discipline-specific examples.</p>
           <p><strong>Human review:</strong> check accuracy, cultural assumptions, reading level, relevance, and whether examples reflect diverse student experiences.</p>
           <p><strong>Red flag:</strong> AI may default to narrow, stereotyped, or overly generic examples.</p>
         </article>
 
-        <article class="card plum">
+        <article class="decision-card secondary">
           <h3>OER/ZTC Materials</h3>
           <p><strong>AI can help with:</strong> summarizing open materials, drafting reading guides, and aligning resources to outcomes.</p>
           <p><strong>Human review:</strong> verify licensing, attribution needs, source accuracy, and whether the resource is actually usable for students.</p>
           <p><strong>Red flag:</strong> AI may misstate license terms or invent citations.</p>
         </article>
 
-        <article class="card blue">
+        <article class="decision-card technical">
           <h3>Rubrics and Feedback</h3>
           <p><strong>AI can help with:</strong> drafting rubric language, feedback stems, and revision-focused comments.</p>
           <p><strong>Human review:</strong> ensure the rubric matches outcomes, supports learning, and does not punish students for unclear expectations.</p>
           <p><strong>Red flag:</strong> AI may create criteria that are too vague, too punitive, or misaligned.</p>
         </article>
 
-        <article class="card teal">
+        <article class="decision-card practice">
           <h3>Student-Facing AI Use</h3>
           <p><strong>AI can help with:</strong> brainstorming, practice, revision, and reflection when expectations are clear.</p>
           <p><strong>Human review:</strong> clarify what students may use AI for, what they must disclose, and what learning still belongs to them.</p>
@@ -145,7 +148,7 @@
       </div>
     </section>
 
-    <section id="checklist" class="page-section callout blue-callout">
+    <section id="checklist" class="page-section info-card callout primary-callout">
       <h2>Human Judgment Checklist</h2>
       <ul>
         <li>Is the content accurate?</li>
@@ -158,7 +161,7 @@
       </ul>
     </section>
 
-    <section id="apply" class="page-section reflection">
+    <section id="apply" class="page-section info-card reflection">
       <h2>Pause and Apply</h2>
       <p>
         Choose one course material you might revise with AI. Before generating anything, write down:
@@ -173,32 +176,24 @@
   </main>
 
   <footer class="site-footer">
-    <p>Responsible AI use starts with human judgment, not the prompt.</p>
-
     <div class="footer-divider"></div>
 
     <div class="footer-content">
+      <p class="footer-title">Beyond the Prompt</p>
 
-        <p class="footer-title">
-            Beyond the Prompt
-        </p>
+      <p>
+        <strong>Under Development</strong><br />
+        This resource is actively being developed and updated.
+      </p>
 
-        <p>
-            <strong>Under Development</strong><br>
-            This resource is actively being developed and updated.
-        </p>
+      <p>
+        Created and maintained by <strong>Leah Wiitablake, Ph.D.</strong>
+      </p>
 
-        <p>
-            Created and maintained by <strong>Leah Wiitablake, Ph.D.</strong>
-        </p>
-
-        <p class="footer-small">
-            © 2026 Leah Wiitablake. All rights reserved while this project is under development.
-        </p>
-
+      <p class="footer-small">
+        © 2026 Leah Wiitablake. All rights reserved while this project is under development.
+      </p>
     </div>
-
-</footer>
   </footer>
 </body>
 </html>

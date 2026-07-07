@@ -386,34 +386,41 @@ nav a {
 
 /* ==========================================================
    Footer
-   Full-width divider; smaller footer content.
+   Compact footer with full-width divider.
    ========================================================== */
 
 .site-footer {
-  border-top: 1px solid var(--border);
-  margin-top: 2rem;
+  margin-top: 4rem;
   color: var(--muted);
+}
+
+.footer-divider {
+  width: 100%;
+  height: 2px;
+  background: var(--border);
 }
 
 .footer-inner {
   width: min(92%, 1200px);
   margin: 0 auto;
-  padding: 1.25rem 0;
-  font-size: .9rem;
+  padding: 1rem 0 1.25rem;
+  font-size: 0.88rem;
 }
 
 .footer-inner p {
-  margin: 0 0 .4rem 0;
+  margin: 0 0 0.35rem 0;
+  max-width: none;
 }
 
 .footer-title {
   font-weight: 700;
   color: var(--primary);
+  font-size: 0.95rem;
 }
 
 .footer-small {
   color: var(--muted);
-  font-size: .85rem;
+  font-size: 0.8rem;
 }
 
 /* ==========================================================

@@ -124,7 +124,7 @@ a {
 
 .site-header {
   background: var(--white);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -198,7 +198,7 @@ nav a {
 
 .info-card {
   background: var(--white);
-  border: 6px solid var(--border);
+  border: 2.5px solid var(--border);
   border-left: 7px solid var(--primary);
   border-radius: 16px;
   padding: 1.25rem;
@@ -238,7 +238,7 @@ nav a {
 
 .workflow-card {
   background: var(--white);
-  border: 6px solid var(--border);
+  border: 2.5px solid var(--border);
   border-left-width: 8px;
   border-radius: 16px;
   padding: 1.25rem;

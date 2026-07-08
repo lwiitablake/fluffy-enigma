@@ -642,12 +642,23 @@ nav a {
   }
 
   body.print-card-page .print-card {
-    height: 3.25in;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    border-radius: 0.12in;
-    padding: 0.12in;
-  }
+
+    background: var(--white);
+
+    border: 2px solid var(--border);
+    border-left-width: 7px;
+    border-bottom-width: 7px;
+
+    border-radius: 14px;
+
+    padding: .85rem;
+
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+
+}
 
   body.print-card-page .print-card h2 {
     font-size: 11pt;
@@ -657,4 +668,17 @@ nav a {
     font-size: 7.8pt;
     line-height: 1.35;
   }
+}
+
+
+.card-footer {
+    margin-top: auto;
+    padding-top: .5rem;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: .55rem;
+    text-align: center;
 }

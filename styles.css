@@ -5,11 +5,6 @@
    rewriting the whole stylesheet.
    ========================================================== */
 
-/* ==========================================================
-   Design Tokens
-   These variables make the site easier to maintain.
-   ========================================================== */
-
 :root {
   --text: #1f2933;
   --muted: #52616b;
@@ -455,4 +450,64 @@ nav a {
   .hero-inner {
     padding: 2.5rem 0;
   }
+}
+
+/* ==========================================================
+   Download Cards
+   ========================================================== */
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.download-card {
+  background: var(--white);
+  border: 2px solid var(--technical-soft);
+  border-left: 8px solid var(--technical);
+  border-bottom: 8px solid var(--technical);
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+.download-card h3 {
+  color: var(--technical-dark);
+}
+
+.download-card.practice {
+  border-color: var(--practice-soft);
+  border-left-color: var(--practice);
+  border-bottom-color: var(--practice);
+}
+
+.download-card.practice h3 {
+  color: var(--practice-dark);
+}
+
+.download-card.technical {
+  border-color: var(--technical-soft);
+  border-left-color: var(--technical);
+  border-bottom-color: var(--technical);
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .7rem 1rem;
+  background: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+.download-button:hover {
+  text-decoration: underline;
+}
+
+.download-button:focus-visible {
+  outline: 3px solid var(--warning);
+  outline-offset: 3px;
 }

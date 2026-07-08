@@ -619,17 +619,21 @@ nav a {
     margin: 0.35in;
   }
 
-  body {
+  body:not(.print-card-page) {
+    display: none;
+  }
+
+  body.print-card-page {
     background: white;
   }
 
-  .no-print,
-  .site-header,
-  .site-footer {
+  body.print-card-page .no-print,
+  body.print-card-page .site-header,
+  body.print-card-page .site-footer {
     display: none !important;
   }
 
-  .print-sheet {
+  body.print-card-page .print-sheet {
     width: 100%;
     margin: 0;
     display: grid;
@@ -637,8 +641,7 @@ nav a {
     gap: 0.12in;
   }
 
-  .print-card {
-    min-height: auto;
+  body.print-card-page .print-card {
     height: 3.25in;
     break-inside: avoid;
     page-break-inside: avoid;
@@ -646,11 +649,11 @@ nav a {
     padding: 0.12in;
   }
 
-  .print-card h2 {
+  body.print-card-page .print-card h2 {
     font-size: 11pt;
   }
 
-  .print-card p {
+  body.print-card-page .print-card p {
     font-size: 7.8pt;
     line-height: 1.35;
   }

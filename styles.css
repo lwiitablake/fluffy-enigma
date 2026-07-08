@@ -511,3 +511,141 @@ nav a {
   outline: 3px solid var(--warning);
   outline-offset: 3px;
 }
+
+
+/* ==========================================================
+   Printable Decision Cards
+   Nine cards per page for browser printing.
+   ========================================================== */
+
+.print-sheet {
+  width: min(92%, 1200px);
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.print-card {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-left-width: 7px;
+  border-bottom-width: 7px;
+  border-radius: 14px;
+  padding: 0.85rem;
+  min-height: 260px;
+}
+
+.print-card h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.print-card p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin: 0 0 0.55rem 0;
+}
+
+.print-card.primary {
+  border-color: var(--primary-soft);
+  border-left-color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.print-card.support {
+  border-color: var(--support-soft);
+  border-left-color: var(--support);
+  border-bottom-color: var(--support);
+}
+
+.print-card.warning {
+  border-color: var(--warning-soft);
+  border-left-color: var(--warning);
+  border-bottom-color: var(--warning);
+}
+
+.print-card.secondary {
+  border-color: var(--secondary-soft);
+  border-left-color: var(--secondary);
+  border-bottom-color: var(--secondary);
+}
+
+.print-card.technical {
+  border-color: var(--technical-soft);
+  border-left-color: var(--technical);
+  border-bottom-color: var(--technical);
+}
+
+.print-card.practice {
+  border-color: var(--practice-soft);
+  border-left-color: var(--practice);
+  border-bottom-color: var(--practice);
+}
+
+.print-card.primary h2 {
+  color: var(--primary);
+}
+
+.print-card.support h2 {
+  color: var(--support-dark);
+}
+
+.print-card.warning h2 {
+  color: var(--warning-dark);
+}
+
+.print-card.secondary h2 {
+  color: var(--secondary);
+}
+
+.print-card.technical h2 {
+  color: var(--technical-dark);
+}
+
+.print-card.practice h2 {
+  color: var(--practice-dark);
+}
+
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 0.35in;
+  }
+
+  body {
+    background: white;
+  }
+
+  .no-print,
+  .site-header,
+  .site-footer {
+    display: none !important;
+  }
+
+  .print-sheet {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.12in;
+  }
+
+  .print-card {
+    min-height: auto;
+    height: 3.25in;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border-radius: 0.12in;
+    padding: 0.12in;
+  }
+
+  .print-card h2 {
+    font-size: 11pt;
+  }
+
+  .print-card p {
+    font-size: 7.8pt;
+    line-height: 1.35;
+  }
+}

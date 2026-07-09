@@ -553,6 +553,8 @@ nav a {
   margin: 0 0 0.55rem 0;
 }
 
+/* Color rules for printable cards */
+
 .print-card.primary {
   border-color: var(--primary-soft);
   border-left-color: var(--primary);
@@ -623,8 +625,10 @@ nav a {
     display: none;
   }
 
-  body.print-card-page {
+   body.print-card-page {
     background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   body.print-card-page .no-print,
